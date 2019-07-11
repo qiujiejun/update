@@ -258,6 +258,7 @@ class UpdateAgent implements ICheckAgent, IUpdateAgent, IDownloadAgent {
     }
 
     void doFailure(UpdateError error) {
+        UpdateUtil.log("doFailure, error: " + error.toString());
         if (mIsManual || error.isError()) {
             mOnFailureListener.onFailure(error);
         }

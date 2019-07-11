@@ -48,9 +48,7 @@ public class UpdateUtil {
     static boolean DEBUG = true;
 
     public static void log(String content) {
-        if (DEBUG) {
-            Log.i(TAG, content);
-        }
+        Log.i(TAG, content);
     }
 
     public static void clean(Context context) {
